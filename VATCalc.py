@@ -5,7 +5,7 @@ def calculate_vat():
         amount = float(entry_amount.get())
         custom_vat = entry_custom_vat.get()
         if not custom_vat:
-            raise ValueError("Custom VAT rate is empty")
+            raise ValueError("VAT rate is empty")
         vat_rate = float(custom_vat)
         vat_amount = amount * (vat_rate / 100)
         total_amount = amount + vat_amount
